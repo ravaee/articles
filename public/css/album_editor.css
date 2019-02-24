@@ -1,0 +1,203 @@
+
+.intLink { cursor: pointer; }
+img.intLink { border: 0; }
+#toolBar1 select { font-size:10px; width: 100%;}
+#editor {
+  height:450px;
+  padding: 12px;
+  overflow: scroll;
+  line-height: 1.6;
+
+}
+#textBox #sourceText {
+  padding: 0;
+  margin: 0;
+  min-width: 498px;
+  min-height: 200px;
+}
+#editMode label { cursor: pointer; }
+
+.editor_p{
+  text-align:justify;
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em; 
+  line-height: 2.1 !important;
+}
+
+
+
+.editor_img{
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editor_img_half{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intLink{
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#toolBar2{
+  margin-bottom: 10px !important;
+}
+
+
+/* image uploader  */
+
+body {
+  font: 12px 'Open Sans';
+}
+.form-control, .thumbnail {
+  border-radius: 2px;
+}
+.btn-danger {
+  background-color: #B73333;
+}
+
+/* File Upload */
+.fake-shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+}
+.fileUpload #logo-id {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 33px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.fileUpload #logo-id2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 33px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.img-preview {
+  max-width: 100%;
+}
+
+
+/* modal */
+
+.vertical-alignment-helper {
+  display:table;
+  height: 100%;
+  width: 100%;
+  pointer-events:none;
+}
+
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events:none;
+}
+
+.modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width:inherit;
+max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+  height:inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events:all;
+  text-align: right;
+}
+
+.modal-footer{
+  text-align: inherit;
+}
+
+#myModal  .modal-body{
+  background: whitesmoke;
+  width: 100%;
+  max-height: 300px;
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.modal-title{
+  font-weight: bold;
+
+}
+
+.album_block{
+  background-color: transparent;
+  padding: 10px;
+  max-height: 120px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.picture_block{
+  background-color: transparent;
+  padding: 10px;
+  max-height: 160px;
+  cursor: pointer;
+}
+
+.album_block:hover{
+  background-color: rgb(233, 137, 81);
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.picture_block:hover{
+  background-color: rgb(233, 137, 81);
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+
+@media (max-width: 999999500px) {
+
+  .thumb{
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .thumb{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  .thumb{
+    width: 100%;
+  }
+
+
+
+}

@@ -20,7 +20,7 @@
     &nbsp&nbsp&nbsp&nbsp
     <i style=" vertical-align: middle; font-size:20px;" class="fa fa-clock-o" aria-hidden="true"></i><span>  <b>تاریخ انتشار:</b>   {{Verta::instance($article->created_at)->format('%d  %B  %Y')}}</span>
     &nbsp&nbsp&nbsp&nbsp
-    <i style=" vertical-align: middle; font-size:20px;" class="fa fa-list-ul" aria-hidden="true"></i> <b>دسته بندی ها:</b> <span> <a class="a" href="index.php">برنامه نویسی</a></span>
+    <i style=" vertical-align: middle; font-size:20px;" class="fa fa-list-ul" aria-hidden="true"></i> <b>دسته بندی ها:</b> <span> <a class="a" href="index.php">{{ $article->catText }}</a></span>
 
     </div>
 

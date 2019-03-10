@@ -4,6 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Category
+ * @package App
+ * @property int $Id
+ * @property string $name
+ * @property int count
+ */
 class Category extends Model
 {
 

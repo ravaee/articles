@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Database\QueryException;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\DB;
@@ -18,7 +19,13 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-        $cats = Category::all();
+        // FIXME Is it a good place for sharing variables?
+        try {
+            $cats = Category::all();
+        } catch (QueryException $e) {
+            // If our database is not accessible because of some reasons.
+            $cats = [];
+        }
         \View::share('cats', $cats);
     }
 
